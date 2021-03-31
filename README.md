@@ -1,25 +1,29 @@
-# Learning template
+# Learning WebWorkers (und comlink)
 
 Just one of the things I'm learning. <https://github.com/hchiam/learning>
 
-(To create a convenience script repo, use this template instead: https://github.com/hchiam/convenience)
+https://www.youtube.com/watch?v=rZm1YaMZkUU
 
-(To create a website fast, use a code generator like [`create-next-app`](https://github.com/hchiam/learning-nextjs), [`sapper`](https://github.com/hchiam/learning-sapper), a [svelte template](https://github.com/sveltejs/template), or [`yo`](https://yeoman.io/generators) )
+https://github.com/GoogleChromeLabs/comlink
 
-<!-- Add reference link(s) here -->
+WebWorkers are available even in IE 10.
+
+You can use WebWorkers to free up the main thread and UI, and help apps work faster on low-end devices.
+
+And you can make WebWorkers easier to use from the main thread by using [`comlink`](https://github.com/GoogleChromeLabs/comlink) instead of trying to manage WebWorker messaging (since WebWorkers can't directly access things like the DOM).
 
 ## From scratch
 
 Using [`yarn`](https://github.com/hchiam/learning-yarn):
 
 ```bash
-yarn add 
+yarn add
 ```
 
 Or with `npm`:
 
 ```bash
-npm install 
+npm install
 ```
 
 And then:
