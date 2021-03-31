@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Demo</title>
+  </head>
+  <body>
+    <script type="module">
+      import * as Comlink from "https://unpkg.com/comlink@alpha/dist/esm/comlink.mjs";
+
+      (async function () {
+        const worker = new Worker("worker.js");
+        const object = Comlink.wrap(worker);
+
+        alert(`Counter: ${await object.counter}`);
+        await object.increment();
+        alert(`Counter: ${await object.counter}`);
+      })();
+    </script>
+  </body>
+</html>
