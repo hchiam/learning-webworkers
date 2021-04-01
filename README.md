@@ -14,6 +14,8 @@ You can use WebWorkers to free up the main thread and UI, and help apps work fas
 
 And you can make WebWorkers easier to use from the main thread by using [`comlink`](https://github.com/GoogleChromeLabs/comlink) instead of trying to manage WebWorker messaging (since WebWorkers can't directly access things like the DOM).
 
+Working live example of React using a Web Worker: <https://codesandbox.io/s/n06fu?file=/src/index.tsx>
+
 ## From scratch
 
 Using [`yarn`](https://github.com/hchiam/learning-yarn):
