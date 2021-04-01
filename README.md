@@ -2,9 +2,11 @@
 
 Just one of the things I'm learning. <https://github.com/hchiam/learning>
 
-https://www.youtube.com/watch?v=rZm1YaMZkUU
+<https://www.youtube.com/watch?v=rZm1YaMZkUU>
 
-https://github.com/GoogleChromeLabs/comlink
+<https://github.com/GoogleChromeLabs/comlink>
+
+Note: Service Workers can modify network requests, but Web Workers can run expensive scripts without freezing the UI: <https://stackoverflow.com/a/38634315>
 
 WebWorkers are available even in IE 10.
 
