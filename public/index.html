@@ -5,13 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Demo</title>
+    <style>body { background-color: #333;}</style>
   </head>
   <body>
     <script type="module">
-      import * as Comlink from "https://unpkg.com/comlink@alpha/dist/esm/comlink.mjs";
+      // import * as Comlink from "https://unpkg.com/comlink@4.3.1/dist/esm/comlink.mjs";
+      import * as Comlink from "comlink";
 
       (async function () {
-        const worker = new Worker("worker.js");
+        const worker = new Worker(new URL('worker.js', import.meta.url));
         const object = Comlink.wrap(worker);
 
         alert(`Counter: ${await object.counter}`);

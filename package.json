@@ -4,7 +4,8 @@
   "description": "Just one of the things I'm learning. <https://github.com/hchiam/learning>",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "parcel public/index.html",
+    "start": "parcel public/index.html"
   },
   "repository": {
     "type": "git",
@@ -17,7 +18,7 @@
   },
   "homepage": "https://github.com/hchiam/learning-webworkers#readme",
   "dependencies": {
-    "comlink": "^4.3.0"
+    "comlink": "^4.3.1"
   },
   "devDependencies": {
     "parcel": "^2.0.0-beta.2"

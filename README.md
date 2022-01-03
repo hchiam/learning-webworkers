@@ -69,19 +69,13 @@ Comlink.expose(object);
 Using [`yarn`](https://github.com/hchiam/learning-yarn): (triple-click to select all)
 
 ```bash
-git clone https://github.com/hchiam/learning-webworkers.git && cd learning-webworkers && yarn;
+git clone https://github.com/hchiam/learning-webworkers.git && cd learning-webworkers && yarn && yarn dev;
 ```
 
 Or with `npm`: (triple-click to select all)
 
 ```bash
-git clone https://github.com/hchiam/learning-webworkers.git && cd learning-webworkers && npm install;
-```
-
-And then:
-
-```bash
-parcel public/index.html
+git clone https://github.com/hchiam/learning-webworkers.git && cd learning-webworkers && npm install && npm run dev;
 ```
 
 <http://localhost:1234>
