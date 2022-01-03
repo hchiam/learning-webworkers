@@ -10,7 +10,7 @@
   <body>
     <script type="module">
       // import * as Comlink from "https://unpkg.com/comlink@4.3.1/dist/esm/comlink.mjs";
-      import * as Comlink from "comlink";
+      import * as Comlink from "comlink"; // you'll need to npm run dev or yarn dev
 
       (async function () {
         const worker = new Worker(new URL('worker.js', import.meta.url));
